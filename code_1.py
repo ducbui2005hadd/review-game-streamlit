@@ -12,7 +12,7 @@ Phân tích các bài đánh giá game từ người chơi thực tế, bao gồ
 # Load dữ liệu
 @st.cache_data
 def load_data():
-    df = pd.read_csv("trained/sample_pred_results.csv") 
+    df = pd.read_csv("sample_pred_results.csv") 
     df['date_posted'] = pd.to_datetime(df['date_posted'])
     return df
 
